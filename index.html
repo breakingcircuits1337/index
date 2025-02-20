@@ -1,66 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="ahrefs-site-verification" content="b5337716d43bfef125c633a624a2a2d9465f85c0f2131e198796f6ba77d890d5">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breaking Circuits</title>
+    <title>Breaking Circuits - Affordable Cybersecurity Solutions (Matrix Theme)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
+            font-family: monospace, monospace;
             margin: 0;
             padding: 0;
-            background-image: url('index/bcpic.jpg'); /* Correct relative path */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: white;
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            background-color: #000;
+            color: #00ff00;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #004d00;
+        }
+        header .phone-number {
+            font-size: 1.5em;
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 4.0em;
+            color: #00ff00;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        header p {
+            color: #00cc00;
+        }
+        .hero-section {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px 20px;
             text-align: center;
         }
-
-        .content {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            max-width: 800px; /* Added max-width for larger screens */
-            margin: 20px; /* Added margin for spacing */
+        .hero-section h1 {
+            font-size: 2.5em;
+            color: #00ff00;
+            margin-bottom: 10px;
         }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px; /* Added margin below heading */
-        }
-
-        p {
+        .hero-section p {
             font-size: 1.2em;
-            line-height: 1.5;
-            margin-bottom: 15px; /* Added margin below paragraphs */
+            color: #00cc00;
         }
-
-        /* Responsive adjustments (example) */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em; /* Smaller heading on smaller screens */
-            }
-            .content {
-                padding: 15px; /* Smaller padding */
-                margin: 10px; /* Smaller margin */
-            }
+        .services-section, .about-us-section {
+            padding: 40px 20px;
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .services-section h2, .about-us-section h2 {
+            color: #00ff00;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #004d00;
+            padding-bottom: 10px;
+        }
+        .service-item {
+            margin-bottom: 30px;
+        }
+        .service-item h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+        .feature-list {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #00cc00;
+        }
+        .cta-section {
+            background-color: #004d00;
+            color: #00ff00;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #00cc00;
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #00ff00;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #004d00;
+            margin-top: 40px;
+            color: #00cc00;
+        }
+        .social-links a {
+            color: #00cc00;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #00ff00;
+        }
+        #matrixCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
-    <div class="content">
+
+    <canvas id="matrixCanvas"></canvas>
+
+    <header>
+        <p class="phone-number">Call Us Today: 1 888 422 4616</p>
         <h1>Breaking Circuits</h1>
-        <p>Welcome to Breaking Circuits, your source for cutting-edge security research and ethical hacking expertise. We are dedicated to exploring the frontiers of cybersecurity, uncovering vulnerabilities, and developing innovative solutions to protect against emerging threats.</p>
+        <p>Democratizing Cybersecurity through Affordable Cybersecurity Solutions</p>
+    </header>
 
-        <p>Stay tuned for updates on our latest projects, insights, and training programs.</p>
+    <section class="hero-section">
+        <h1>Cybersecurity Peace of Mind, Without Breaking the Bank</h1>
+        <p>Expert, accessible, and affordable cybersecurity solutions powered by open-source innovation and AI. We protect individuals and small businesses, bridging the digital divide.</p>
+        <a href="#services" class="cta-button">Enter the Matrix... of Services</a>
+    </section>
 
-        <p>Connect with us to learn more about how we can help you secure your systems and data.</p>
-    </div>
+    <section class="about-us-section">
+        <h2>From Cyberattack Victim to Cybersecurity Champion: Our Story</h2>
+        <p>In the digital age, cybersecurity isn't just a luxury—it's a necessity. Yet, for many individuals and small businesses, robust protection remains out of reach, shrouded in complexity and exorbitant costs. Breaking Circuits, LLC, was born from the ashes of one founder's personal cyber nightmare, a harrowing experience that illuminated the desperate need for accessible and affordable cybersecurity solutions.</p>
+        <p>Our founder, a disabled entrepreneur, knows firsthand the devastating impact a cyberattack can inflict. It began innocuously enough: a seemingly harmless phishing email that slipped past the existing defenses. But soon, the insidious malware spread like wildfire, crippling critical systems and jeopardizing sensitive data. What followed was a grueling two-and-a-half-month ordeal, a relentless battle against faceless adversaries who sought to exploit vulnerabilities and wreak havoc.</p>
+        <p>With limited financial resources and no access to professional help, the founder was left to fend for themselves, facing immense challenges alone. Imagine the feeling of isolation, the weight of responsibility as you watch your digital life crumble around you. The founder was forced to dedicate up to 12 hours a day to studying, experimenting, and piecing together a defense against the relentless assault.</p>
+        <p>Through sheer perseverance, countless hours of research, and a relentless commitment to learning, the founder managed to repel the attackers. This victory, however, was bittersweet. The experience left an indelible mark, exposing the harsh realities of the cybersecurity landscape:</p>
+        <ul>
+            <li><strong>High Costs as Barriers:</strong> The high costs associated with professional cybersecurity services create significant barriers to entry, leaving many vulnerable and unprotected.</li>
+            <li><strong>Lack of Accessible Support:</strong> Finding reliable and affordable help during a cyberattack is incredibly difficult, leaving victims feeling isolated and overwhelmed.</li>
+            <li><strong>The Digital Divide:</strong> The digital divide exacerbates these challenges, as underserved communities lack the resources and expertise to defend themselves against increasingly sophisticated threats.</li>
+        </ul>
+        <p>This personal crucible ignited a deep-seated passion to help others avoid the same fate. Thus, Breaking Circuits, LLC, was conceived as a beacon of hope, a company committed to democratizing cybersecurity and empowering individuals and communities to navigate the digital world with confidence.</p>
+
+        <h2>Our Mission and Vision</h2>
+        <p>Our mission is simple: to provide transparent, affordable, and accessible cybersecurity solutions using open-source software. We focus on empowering underserved communities and fostering a diverse and inclusive cybersecurity workforce. We envision a world where everyone, regardless of their financial means or technical expertise, has access to robust cybersecurity services. We strive to bridge the digital divide and promote diversity within the cybersecurity field, creating a more equitable and secure digital future for all.</p>
+
+        <h2>Our Commitment to Open Source</h2>
+        <p>Breaking Circuits exclusively uses open-source software, promoting transparency and affordability. Open-source solutions provide greater flexibility, community support, and the ability to customize security measures to meet specific needs. By leveraging these tools, we can keep costs low and deliver effective solutions tailored to our clients' unique challenges.</p>
+
+        <h2>Our Volunteer-Based Model</h2>
+        <p>We operate on a volunteer-based workforce model supervised by experienced professionals. This innovative approach not only allows us to offer cost-effective services but also creates a pipeline for qualified cybersecurity professionals. We provide training, mentorship, and real-world experience to our volunteers, fostering a diverse and skilled workforce ready to tackle the cybersecurity challenges of tomorrow.</p>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Core Services - Decode Them</h2>
+
+        <div class="service-item">
+            <h3>24/7 Tech Support: Cybersecurity Peace of Mind, Without Breaking the Bank</h3>
+            <h4>Get expert technical assistance for all your cybersecurity needs. Fast, reliable, and affordable solutions for individuals and businesses.</h4>
+            <p>Cybersecurity issues can disrupt your business and personal life. From VPN troubleshooting to system optimization and securing vulnerable networks, technical glitches can leave you exposed.</p>
+            <p>Breaking Circuits offers 24/7 tech support to resolve your cybersecurity challenges quickly and efficiently. Our expert team uses cutting-edge open-source tools to diagnose and fix problems, ensuring your systems are secure and running smoothly.</p>
+            <ul class="feature-list">
+                <li><strong>24/7 Availability:</strong> We're here for you around the clock, ready to tackle any issue.</li>
+                <li><strong>Expert Technicians:</strong> Our skilled team is trained to handle a wide range of cybersecurity and IT challenges.</li>
+                <li><strong>Affordable Pricing:</strong> We offer competitive rates and transparent pricing, making expert support accessible to everyone.</li>
+                <li><strong>Remote Support:</strong> Get help from anywhere with our secure remote support tools.</li>
+            </ul>
+            <p><strong>Pricing Options:</strong> For small businesses, we offer a pay-per-ticket model, with Tier 1 tickets around $20 on average.  If you anticipate lighter needs, our Pay-Per-Call option ranges from $15-$25 per call, offering flexibility and scalability.</p>
+            <div class="cta-section" style="background-color: transparent; padding: 0; text-align: left;">
+                <a href="https://breakingcircuits.com/tech-support" class="cta-button" style="background-color: #00cc00; color: #000; margin-top: 10px;">Get instant tech support now! Contact us for a free consultation.</a>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <h3>Unlock the Power of AI: Private LLM Installation for Enhanced Security and Automation</h3>
+            <h4>Harness the power of Large Language Models (LLMs) in a secure, private environment. Tailored AI solutions for threat detection, custom AI models, and more. Starting at only $49.</h4>
+            <p>Large Language Models (LLMs) are revolutionizing cybersecurity. By integrating AI into your network, you can automate threat detection, analyze security logs in real-time, and create custom AI-driven solutions.</p>
+            <p>Breaking Circuits specializes in the private installation, configuration, and fine-tuning of LLMs. We ensure your AI models are secure, optimized for your specific needs, and seamlessly integrated into your existing infrastructure.</p>
+            <ul class="feature-list">
+                <li><strong>Secure, Private Environment:</strong> Keep your data safe with LLMs hosted within your own infrastructure.</li>
+                <li><strong>Customized Solutions:</strong> We tailor LLMs to your unique requirements, whether it's real-time threat detection, customer service automation, or internal knowledge bases.</li>
+                <li><strong>Seamless Integration:</strong> We handle the entire installation process, including API integration with tools like pfSense for continuous monitoring and response.</li>
+                <li><strong>Cutting-Edge Technology:</strong> We use platforms like TensorFlow and Hugging Face to deploy the latest LLM technologies.</li>
+            </ul>
+             <p><strong>Starting from just $49</strong>, unlock the future of cybersecurity with private LLM installations.</p>
+            <div class="cta-section" style="background-color: transparent; padding: 0; text-align: left;">
+                <a href="consultation.html" class="cta-button" style="background-color: #00cc00; color: #000; margin-top: 10px;">Transform your cybersecurity with AI. Schedule a consultation to discuss your LLM integration needs.</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Enter the System and Secure Your Digital World?</h2>
+        <p>Contact Breaking Circuits today for affordable and expert cybersecurity solutions!</p>
+        <a href="services.html" class="cta-button">Contact Us Now</a>
+    </section>
+
+    <section class="youtube-section">
+        <h2>Watch Our Introduction Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Breaking Circuits LLC. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <div class="social-links">
+            <a href="https://github.com/breakingcircuits1337" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://facebook.com/https://www.facebook.com/share/p/15TZXGmtXi/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://python.org" target="_blank"><i class="fab fa-python"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('matrixCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$€¥£%*()_+{}:@~#><?-=,./;'[]\ ";
+        const fontSize = 16;
+        const columns = canvas.width/fontSize;
+
+        const drops = [];
+        for(let i = 0; i < columns; i++) {
+            drops[i] = 1;
+        }
+
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#0f0';
+            ctx.font = fontSize + 'px monospace';
+
+            for(let i = 0; i < columns; i++) {
+                const text = characters.charAt(Math.floor(Math.random() * characters.length));
+                const x = i * fontSize;
+                const y = drops[i] * fontSize;
+                ctx.fillText(text, x, y);
+
+                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 33);
+
+        window.addEventListener('resize', function() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"), s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/67ade5fa3a842732607e48ba/1ijvkkmr3';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
 </body>
 </html>
